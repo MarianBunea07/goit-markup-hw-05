@@ -95,6 +95,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition);
+    outline:none;
 }
 
 .order-button:hover {
@@ -264,7 +266,7 @@ section {
 }
 
 a{
-    transition:color var(--transition)
+    transition: var(--transition);
 }
 
 .title {
@@ -334,9 +336,9 @@ a{
     margin-left: 24px;
 }
 
-offer-card-item {}
 
-.hero-container {
+
+.hero-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,7 +362,7 @@ offer-card-item {}
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 .icons-list .icon svg{
 width: 20px;
@@ -368,8 +370,8 @@ height: 20px;
 }
 
 .icon-list .icon{
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background-color: var(--icons-background);
     border-radius: 50%;
     display:flex;
@@ -389,7 +391,7 @@ color: var(--icons-color);
 /* BACKGROUND */
 
 .hero-section{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/people-office.png);
     height: 600px;
     width: 1440px;
     display: flex;
@@ -404,7 +406,7 @@ color: var(--icons-color);
 }
 
 .customers-heading{
-    margin-left: 850px;
+    margin-left: 720px;
 }
 
 /* FOOTER SVG-S SECTION */
@@ -450,7 +452,48 @@ border-radius: 50%;
     margin-bottom: 8px;
 }
 
+/* MODAL */
 
+.is-hidden{
+    visibility: hidden;
+    scale: 1.05;
+}
+
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    padding: 16px;
+    background-color: #fff;
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.close-btn{
+    position: absolute;
+        top: 24px;
+        right: 24px;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        color: ##2e2f42;
+        background-color: #f4f4fd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        border-style: none;
+        margin-bottom: 24px;
+}
 
 
 
